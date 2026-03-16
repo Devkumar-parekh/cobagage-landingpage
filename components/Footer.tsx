@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+
 
 const LOGO = "./File_img/CobagageLogo 1.png";
 
@@ -98,14 +100,14 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4">Legal</h4>
           <ul className="space-y-2 text-sm text-gray-400">
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/terms&conditions" className="hover:text-white text-decoration-none">
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/privacyPolicy" className="hover:text-white text-decoration-none">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:text-white">

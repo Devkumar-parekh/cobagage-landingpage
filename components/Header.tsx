@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const LOGO = "./File_img/CobagageLogo 1.png";
@@ -12,31 +13,21 @@ export default function Header() {
           </a>
         </div>
 
-        <nav
-          aria-label="Primary navigation"
-          className="hidden md:flex items-center gap-8 text-gray-700 font-medium"
-        >
-          <a href="#" className="hover:text-gray-900">
-            Home
-          </a>
-          <a href="#about" className="hover:text-gray-900">
-            About Us
-          </a>
-          <a href="#how-it-works" className="hover:text-gray-900">
-            How It Works
-          </a>
-          <a href="#faqs" className="hover:text-gray-900">
-            FAQs
-          </a>
-        </nav>
 
-        <div className="ml-4">
-          <a
-            href="#contact"
-            className="inline-block bg-[#DB5928] text-white px-4 py-2 rounded-md shadow-md hover:opacity-95"
-          >
-            Contact Us
-          </a>
+        <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+          <Link href="/#">Home</Link>
+          <Link href="/#about">About Us</Link>
+          <Link href="/#how-it-works">How It Works</Link>
+          <Link href="/#faqs">FAQs</Link>
+          <Link href="/contact">Contact Us</Link>
+        </nav>
+        <div className="flex gap-4">
+          <button className="flex justify-center text-nowrap items-center px-[13px] py-[1px] w-[68px] h-[36px] bg-white border border-gray-300 rounded-full">
+            Login
+          </button>
+          <button className="flex justify-center items-center text-nowrap px-[13px] py-[1px] w-[68px] h-[36px] bg-[#DB5928] text-white border border-[#DB5928] rounded-full hover:opacity-90">
+            Sing Up
+          </button>
         </div>
       </div>
     </header>

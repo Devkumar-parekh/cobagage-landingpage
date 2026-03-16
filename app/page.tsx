@@ -4,6 +4,7 @@ import WhyChoose from "@/components/WhyChoose";
 import Testimonials from "@/components/Testimonials";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import ContactUsSection from "@/components/ContactUsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Testimonials />
       <FAQSection />
       <CTASection />
+      <ContactUsSection />
     </div>
   );
 }
